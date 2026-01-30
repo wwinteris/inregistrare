@@ -3,56 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inregistrare</title>
+    <title>Error!</title>
     <style>
         body{
-            background-color: rgb(84, 194, 92);
-        }
-        #tralalero{
-            margin-bottom: 5px;
-        }
-        #tralala{
-            margin-bottom: 5px;
-        }
-        #orcalelo{
-            margin-bottom: 5px;
+            background-color: lightgreen;
         }
     </style>
 </head>
 <body>
-    <center><h1>Sectiune de inregistrare:</h1></center>
-    <center><h3><i>Inregistreaza-te la newsletter-ul nostru pentru a primi cele mai noi noutati despre jocuri!</i></h3></center>
-    <center>
-        <form onsubmit="handleFormSubmit()" action="/submit-page" method="POST">
-        <label for="input">Numele/Prenumele:</label>
-        <input type="text" id="tralalero" placeholder="Popescu Ion" required>
-        <br>
-        <br>
-        <label for="input">Adresa G-mail:</label>
-        <input type="email" id="tralala" placeholder="popescu@example.com" required>
-            <br>
-            <br>
-        <label for="input">Parola:</label>
-        <input type="password" id="orcalelo" placeholder="*********" required>
-    </form>
-    </center>
-    <center><button type="submit" id="fname">Inregistreaza-te</button></center>
-    <center><a href="https://wwinteris.github.io/gamerapk/">Inapoi</a></center>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <center><h1 style="border: 4px solid black; border-radius: 10px; max-width: 100px; background-color: pink;">Error!</h1></center>
     <script>
-function handleFormSubmit() {
-  var name = document.getElementById("tralalero").value;
-  var email = document.getElementById("tralala").value;
-  var password = document.getElementById("orcalelo").value;
-  var message = "Submission successful!\n\nDetails captured locally:\nName: " + name + "\nEmail: " + email + "\nPassword: " + password;
-  alert(message);
-  return false;
-}
-</script>
-</body>
-
+        alert('Ne cerem scuze! Aceasta parte este inca in constructie.')
+        const userName = prompt('Introduceti adresa de gmail pentru a afla cand va fi disponibil serviciul.')
+        alert(`Date inregistrate! G-mail: ${userName}`)
+    </script>
+    </body>
 </html>
 
-    
 
 
 
