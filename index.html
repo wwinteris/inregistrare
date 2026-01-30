@@ -39,19 +39,19 @@
     <center><button type="submit" id="fname">Inregistreaza-te</button></center>
     <center><a href="https://wwinteris.github.io/gamerapk/">Inapoi</a></center>
     <script>
-        // JavaScript function to show an alert
-        function showAlert() {
-            alert("The form is being submitted!"); 
-            // This alert will appear when the form is submitted.
-
-            // The function should return 'true' to allow the form to submit normally, 
-            // or 'false' to prevent the submission if needed (e.g., for validation).
-            return true; // Allows the form submission to proceed
-        }
-    </script>
+function handleFormSubmit() {
+  var name = document.getElementById("tralalero").value;
+  var email = document.getElementById("tralala").value;
+  var password = document.getElementById("orcalelo").value;
+  var message = "Submission successful!\n\nDetails captured locally:\nName: " + name + "\nEmail: " + email + "\nPassword: " + password;
+  alert(message);
+  return false;
+}
+</script>
 </body>
 
 </html>
 
     
+
 
