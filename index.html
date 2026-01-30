@@ -23,22 +23,29 @@
     <center><h1>Sectiune de inregistrare:</h1></center>
     <center><h3><i>Inregistreaza-te la newsletter-ul nostru pentru a primi cele mai noi noutati despre jocuri!</i></h3></center>
     <center>
-        <form action="/submit-page" onsubmit="alert('Inregistrat cu succes! Newsletter activat!')">
+        <form action="/submit-page" onsubmit="return showAlert()">
         <label for="input">Numele/Prenumele:</label>
         <input type="text" id="tralalero" placeholder="Popescu Ion" required>
-    </center>
-    <center>
+        <br>
+        <br>
         <label for="input">Adresa G-mail:</label>
         <input type="email" id="tralala" placeholder="popescu@example.com" required>
-    </center>
-    <center>
+            <br>
+            <br>
         <label for="input">Parola:</label>
         <input type="password" id="orcalelo" placeholder="*********" required>
-    </center>
     </form>
-    <center><button type="submit">Inregistreaza-te</button></center>
+    </center>
+    <center><button type="submit" id="fname">Inregistreaza-te</button></center>
     <center><a href="https://wwinteris.github.io/gamerapk/">Inapoi</a></center>
+    <script>
+        function showAlert() {
+            alert('Inregistrat cu succes! Newsletter activat!')
+            return true;
+        }
+    </script>
 </body>
 
 </html>
 
+    
