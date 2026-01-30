@@ -23,18 +23,21 @@
     <center><h1>Sectiune de inregistrare:</h1></center>
     <center><h3><i>Inregistreaza-te la newsletter-ul nostru pentru a primi cele mai noi noutati despre jocuri!</i></h3></center>
     <center>
+        <form action="/submit-page">
         <label for="input">Numele/Prenumele:</label>
-        <input type="text" id="tralalero" placeholder="Popescu Ion">
+        <input type="text" id="tralalero" placeholder="Popescu Ion"required>
     </center>
     <center>
         <label for="input">Adresa G-mail:</label>
-        <input type="text" id="tralala" placeholder="popescu@example.com">
+        <input type="email" id="tralala" placeholder="popescu@example.com" required>
     </center>
     <center>
         <label for="input">Parola:</label>
-        <input type="password" id="orcalelo" placeholder="*********">
+        <input type="password" id="orcalelo" placeholder="*********" required>
     </center>
-    <center><button onclick="alert('Inregistrat cu succes! Newsletter activat!')">Inregistreaza-te</button></center>
+    </form>
+    <center><button type="submit">Inregistreaza-te</button></center>
     <center><a href="index.html">Inapoi</a></center>
 </body>
+
 </html>
