@@ -23,7 +23,7 @@
     <center><h1>Sectiune de inregistrare:</h1></center>
     <center><h3><i>Inregistreaza-te la newsletter-ul nostru pentru a primi cele mai noi noutati despre jocuri!</i></h3></center>
     <center>
-        <form action="/submit-page" onsubmit="return showAlert()">
+        <form onsubmit="return showAlert()" action="/submit-page" method="POST">
         <label for="input">Numele/Prenumele:</label>
         <input type="text" id="tralalero" placeholder="Popescu Ion" required>
         <br>
@@ -39,9 +39,14 @@
     <center><button type="submit" id="fname">Inregistreaza-te</button></center>
     <center><a href="https://wwinteris.github.io/gamerapk/">Inapoi</a></center>
     <script>
+        // JavaScript function to show an alert
         function showAlert() {
-            alert('Inregistrat cu succes! Newsletter activat!')
-            return true;
+            alert("The form is being submitted!"); 
+            // This alert will appear when the form is submitted.
+
+            // The function should return 'true' to allow the form to submit normally, 
+            // or 'false' to prevent the submission if needed (e.g., for validation).
+            return true; // Allows the form submission to proceed
         }
     </script>
 </body>
@@ -49,3 +54,4 @@
 </html>
 
     
+
